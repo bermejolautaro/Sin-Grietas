@@ -1,0 +1,19 @@
+<div class="header-wrapper">
+  <header class="header">
+    <div class="logo">
+    Sin Grietas
+    </div>
+    <div class="menu" id="js-menu">
+      Menu
+    </div>
+  </header>
+  <nav class="nav nav--is-hidden" id="js-nav">
+    {% for item in site.data.navbar-items %}
+    <div class="nav__item {%if page.url == item.link %} nav__item--is-active {% endif %}">
+      <a class="nav__item-link" href="{{ item.link }}">
+        {{ item.name }}
+      </a>
+    </div>
+    {% endfor %}
+  </nav>
+</div>
