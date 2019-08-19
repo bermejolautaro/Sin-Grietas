@@ -1,0 +1,49 @@
+.main {
+    background: #fafafa;
+}
+
+.last-entries {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.last-entries__title {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.post {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+
+    .post__image {
+        background-color: #cccccc;
+        background-image: url("https://www.filo.news/__export/1553795158136/sites/claro/img/2019/03/28/pobreza_1.jpg_1956802537.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 380px;
+        width: 330px;
+        margin:auto;
+    }
+
+    .post__title {
+        margin-top: 30px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .post__description {
+        margin-top: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}

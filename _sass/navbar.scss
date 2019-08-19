@@ -10,23 +10,31 @@
 
 .logo {
   color: white;
-  margin-left: 50px;
-  font-size: 3.5em;
+  margin-left: 15px;
+  font-size: 2em;
 }
 
 .menu {
   cursor: pointer;
   color: white;
-  margin-left:auto;
-  margin-right: 50px;
-  font-size: 2em;
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #eeeeee;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  border-top: white 1px solid;
   &.nav--is-hidden {
     display: none;
   }
@@ -37,21 +45,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 100%;
-  text-align: center;
-  width:100%;
+  width: 100%;
   padding: 15px 0;
+
+  text-align: center;
 }
 
 .nav__item--is-active {
-  text-decoration: underline;
+  .nav__item-link {
+    text-decoration: underline;
+  }
 }
 
 .nav__item-link {
   font-family: sans-serif; 
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
 }
 
